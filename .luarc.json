@@ -1,0 +1,14 @@
+{
+    "diagnostics.disable": [
+        "lowercase-global"
+    ],
+    "diagnostics.globals": [
+        "system",
+        "cd",
+        "rm",
+        "rm_dir",
+        "cp",
+        "tar",
+        "unzip"
+    ]
+}
