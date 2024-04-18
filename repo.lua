@@ -8,16 +8,20 @@ manteiners = { "Diogo-ss" }
 
 -- the only two values allowed are `pkg.name` and `pkg.version`
 templetes = {
-	script = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ pkg.name }}/script.lua",
-	pkg = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ pkg.name }}/${{ pkg.version }}/pkg.lua",
+  script = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ pkg.name }}/script.lua",
+  pkg = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ pkg.name }}/${{ pkg.version }}/pkg.lua",
 }
 
 -- Get the complete repo tree.
--- For now only compatible with GitHub
+-- For now only compatible with GitHub and API format
 -- TODO: GitLab
+
 search = {
-	type = "github",
-	url = "https://api.github.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
-	jsonpath = "tree",
-	pattern = "^pkgs/.*$",
+  type = "github",
+  url = "https://api.github.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
 }
+
+-- search = {
+--   type = "api",
+--   url = "https://api.pkger.dev/pkgs/?search=${{ pkg.name }}",
+-- }
