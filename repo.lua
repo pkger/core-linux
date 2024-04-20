@@ -7,10 +7,7 @@ manteiners = { "Diogo-ss" }
 -- }
 
 -- the only two values allowed are `pkg.name` and `pkg.version`
-templetes = {
-  script = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/script.lua",
-  pkg = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/${{ version }}/pkg.lua",
-}
+url = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/${{ version }}/pkg.lua"
 
 -- Get the complete repo tree.
 -- For now only compatible with GitHub and API format
