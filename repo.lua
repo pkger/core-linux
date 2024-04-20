@@ -16,10 +16,10 @@ templetes = {
 -- For now only compatible with GitHub and API format
 -- TODO: GitLab
 
-search = {
-  type = "github",
-  url = "https://api.github.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
-}
+-- search = {
+--   type = "github",
+--   url = "https://api.github.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
+-- }
 
 -- search = {
 --   type = "api",
