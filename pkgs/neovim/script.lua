@@ -3,7 +3,7 @@ description = "Vim-fork focused on extensibility and usability"
 homepage = "https://neovim.io"
 license = "Apache-2.0"
 manteiners = "Diogo-ss"
-url = "https://github.com/neovim/neovim/releases/download/v${{ pkg.version }}/nvim-linux64.tar.gz"
+url = "https://github.com/neovim/neovim/releases/download/v${{ version }}/nvim-linux64.tar.gz"
 
 bin = "nvim-linux64/bin/nvim"
 

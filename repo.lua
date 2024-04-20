@@ -8,8 +8,8 @@ manteiners = { "Diogo-ss" }
 
 -- the only two values allowed are `pkg.name` and `pkg.version`
 templetes = {
-  script = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ pkg.name }}/script.lua",
-  pkg = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ pkg.name }}/${{ pkg.version }}/pkg.lua",
+  script = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/script.lua",
+  pkg = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/${{ version }}/pkg.lua",
 }
 
 -- Get the complete repo tree.
