@@ -9,6 +9,7 @@
         "rm_dir",
         "cp",
         "tar",
-        "unzip"
+        "unzip",
+        "extract"
     ]
 }
