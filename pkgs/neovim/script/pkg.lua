@@ -13,6 +13,8 @@ checkver = {
 	regex = "[Vv]?(.+)",
 }
 
+print(prefix)
+
 function test()
 	local code, _ = system("nvim --version")
 
