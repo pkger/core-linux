@@ -5,7 +5,7 @@ homepage = "https://neovim.io"
 license = "Apache-2.0"
 manteiners = "Diogo-ss"
 url = "https://github.com/neovim/neovim/releases/download/v${{ version }}/nvim-linux64.tar.gz"
-hash = "44ee395d9b5f8a14be8ec00d3b8ead34e18fe6461e40c9c8c50e6956d643b6ca"
+hash = "c3d7cfd161ccfca866fb690d53c5f0ab0df67934"
 
 bin = "nvim-linux64/bin/nvim"
 
