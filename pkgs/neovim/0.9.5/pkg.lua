@@ -15,6 +15,12 @@ checkver = {
   regex = "[Vv]?(.+)",
 }
 
+depends = {
+  'libluv',
+  'libtermkey',
+  'libuv'
+}
+
 function install()
   extract "nvim-linux64.tar.gz"
 end
