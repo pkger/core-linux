@@ -22,9 +22,10 @@ depends = {
 }
 
 function install()
+  print("processo de instalação")
   extract "nvim-linux64.tar.gz"
 end
 
 function test()
-  extract { "nvim", "--version" }
+  print("alugm teste")
 end
