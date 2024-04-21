@@ -10,22 +10,22 @@ hash = "c3d7cfd161ccfca866fb690d53c5f0ab0df67934"
 bin = "nvim-linux64/bin/nvim"
 
 checkver = {
-  url = "https://api.github.com/repos/neovim/neovim/releases/latest",
-  jsonpath = "tag_name",
-  regex = "[Vv]?(.+)",
+	url = "https://api.github.com/repos/neovim/neovim/releases/latest",
+	jsonpath = "tag_name",
+	regex = "[Vv]?(.+)",
 }
 
 depends = {
-  'libluv',
-  'libtermkey',
-  'libuv'
+	"libluv",
+	"libtermkey",
+	"libuv",
 }
 
 function install()
-  print("processo de instalação")
-  extract "nvim-linux64.tar.gz"
+	print("processo de instalação")
+	extract("nvim-linux64.tar.gz")
 end
 
 function test()
-  print("alugm teste")
+	print("alugm teste")
 end

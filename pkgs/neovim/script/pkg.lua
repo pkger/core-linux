@@ -8,15 +8,15 @@ url = "https://github.com/neovim/neovim/releases/download/v${{ version }}/nvim-l
 bin = "nvim-linux64/bin/nvim"
 
 checkver = {
-  url = "https://api.github.com/repos/neovim/neovim/releases/latest",
-  jsonpath = "tag_name",
-  regex = "[Vv]?(.+)",
+	url = "https://api.github.com/repos/neovim/neovim/releases/latest",
+	jsonpath = "tag_name",
+	regex = "[Vv]?(.+)",
 }
 
-function install()
-  tar "nvim-linux64.tar.gz"
-end
-
 function test()
-  system { "nvim", "--version" }
+	local code, _ = system("nvim --version")
+
+	if code ~= 0 then
+		error("Neovim not found.")
+	end
 end
