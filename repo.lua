@@ -3,7 +3,7 @@ os = "linux"
 arch = "x86"
 
 -- only two values allowed are `pkg.name` and `pkg.version`
-url = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ pkg.name }}/${{ pkg.version }}/pkg.lua"
+url = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/${{ version }}/pkg.lua"
 
 search = {
    type = "github",
