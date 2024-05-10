@@ -15,7 +15,7 @@ url = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/$
 
 search = {
    type = "github",
-   url = "https://api.github.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
+   url = "https://api.ggithub.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
 }
 
 -- search = {
