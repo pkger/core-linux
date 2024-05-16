@@ -14,11 +14,12 @@ checkver = {
 	regex = "<b>curl (.-)</b>",
 }
 
-function install()
+function pre_install()
 	system({
 		"./configure",
 		"--disable-debug",
 		"--disable-dependency-tracking",
+		"--disable-silent-rules",
 		"--prefix=" .. INSTALLATION_DIRECTORY,
 		"--with-openssl",
 		"--without-ca-bundle",
@@ -30,6 +31,8 @@ function install()
 		"--with-libssh2",
 		"--without-libpsl",
 	})
+end
 
+function install()
 	system({ "make", "install" })
 end
