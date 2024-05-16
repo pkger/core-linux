@@ -5,7 +5,7 @@ license = "MIT"
 manteiners = "Diogo-ss"
 version = "8.7.0"
 
-url = "https://curl.se/download/curl-8.7.0.tar.gz"
+url = "https://curl.se/download/curl-${{ version }}.tar.gz"
 
 bin = "bin/curl"
 
