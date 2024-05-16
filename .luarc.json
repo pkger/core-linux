@@ -1,17 +1,25 @@
 {
-    "diagnostics.disable": [
-        "lowercase-global"
-    ],
-    "diagnostics.globals": [
-        "system",
-        "cd",
-        "rm",
-        "rm_dir",
-        "cp",
-        "tar",
-        "unzip",
-        "extract",
-        "prefix",
-        "INSTALLATION_DIRECTORY"
-    ]
+  "diagnostics.disable": [
+    "lowercase-global"
+  ],
+  "diagnostics.globals": [
+    "name",
+    "description",
+    "homepage",
+    "license",
+    "manteiners",
+    "url",
+    "bin",
+    "checkver",
+    "build",
+    "install",
+    "system",
+    "cd",
+    "rm",
+    "rm_dir",
+    "cp",
+    "extract",
+    "prefix",
+    "INSTALLATION_DIRECTORY"
+  ]
 }
