@@ -11,6 +11,7 @@
         "tar",
         "unzip",
         "extract",
-        "prefix"
+        "prefix",
+        "INSTALLATION_DIRECTORY"
     ]
 }

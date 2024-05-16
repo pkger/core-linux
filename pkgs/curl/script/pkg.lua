@@ -3,12 +3,33 @@ description = "A command line tool and library for transferring data with URL sy
 homepage = "https://curl.se"
 license = "MIT"
 manteiners = "Diogo-ss"
-url = "https://github.com/stunnel/static-curl/releases/download/${{ version }}/curl-linux-x86_64-8.7.1.tar.xz"
 
-bin = "curl"
+url = "https://curl.se/download/curl-${{ version }}.tar.gz"
+
+bin = "bin/curl"
 
 checkver = {
-	url = "https://api.github.com/repos/stunnel/static-curl/releases/latest",
-	jsonpath = "tag_name",
-	regex = "[Vv]?(.+)",
+	url = "https://curl.se/download.html",
+	-- regex = "<b>curl%s+(%d+%.%d+%.%d+)</b>",
+	regex = "<b>curl (.-)</b>",
 }
+
+function install()
+	system({
+		"./configure",
+		"--disable-debug",
+		"--disable-dependency-tracking",
+		"--prefix=" .. INSTALLATION_DIRECTORY,
+		"--with-openssl",
+		"--without-ca-bundle",
+		"--without-ca-path",
+		"--with-ca-fallback",
+		"--with-secure-transport",
+		"--with-default-ssl-backend=openssl",
+		"--with-libidn2",
+		"--with-libssh2",
+		"--without-libpsl",
+	})
+
+	system({ "make", "install" })
+end
