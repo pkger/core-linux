@@ -6,8 +6,8 @@ arch = "x86"
 url = "https://raw.githubusercontent.com/pkger/core-pkgs/main/pkgs/${{ name }}/${{ version }}/pkg.lua"
 
 search = {
-   type = "github",
-   url = "https://api.github.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
+	type = "github",
+	url = "https://api.github.com/repos/pkger/core-pkgs/git/trees/main?recursive=1",
 }
 
 -- TODO: GitLab, API, metadata
