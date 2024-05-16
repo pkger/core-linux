@@ -3,7 +3,7 @@ description = "A command line tool and library for transferring data with URL sy
 homepage = "https://curl.se"
 license = "MIT"
 manteiners = "Diogo-ss"
-version = "8.7.0"
+version = "8.6.0"
 
 url = "https://curl.se/download/curl-${{ version }}.tar.gz"
 
