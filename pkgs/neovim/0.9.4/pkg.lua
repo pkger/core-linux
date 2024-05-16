@@ -1,11 +1,10 @@
 name = "neovim"
-version = "0.9.5"
 description = "Vim-fork focused on extensibility and usability"
 homepage = "https://neovim.io"
 license = "Apache-2.0"
 manteiners = "Diogo-ss"
+version = "0.9.4"
 url = "https://github.com/neovim/neovim/releases/download/v${{ version }}/nvim-linux64.tar.gz"
-hash = "c3d7cfd161ccfca866fb690d53c5f0ab0df67934"
 
 bin = "nvim-linux64/bin/nvim"
 
@@ -14,12 +13,3 @@ checkver = {
 	jsonpath = "tag_name",
 	regex = "[Vv]?(.+)",
 }
-
-function install()
-	print("processo de instalação")
-	extract("nvim-linux64.tar.gz")
-end
-
-function test()
-	print("alugm teste")
-end

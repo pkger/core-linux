@@ -12,13 +12,3 @@ checkver = {
 	jsonpath = "tag_name",
 	regex = "[Vv]?(.+)",
 }
-
-print(prefix)
-
-function test()
-	local code, _ = system("nvim --version")
-
-	if code ~= 0 then
-		error("Neovim not found.")
-	end
-end
