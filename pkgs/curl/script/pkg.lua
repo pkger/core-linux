@@ -20,7 +20,7 @@ function pre_install()
 		"--disable-debug",
 		"--disable-dependency-tracking",
 		"--disable-silent-rules",
-		"--prefix=" .. INSTALLATION_DIRECTORY,
+		"--prefix=" .. pkgdir,
 		"--with-openssl",
 		"--without-ca-bundle",
 		"--without-ca-path",

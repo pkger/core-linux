@@ -20,7 +20,7 @@ function install()
 		"./configure",
 		"--disable-debug",
 		"--disable-dependency-tracking",
-		"--prefix=" .. INSTALLATION_DIRECTORY,
+		"--prefix=" .. pkgdir,
 		"--with-openssl",
 		"--without-ca-bundle",
 		"--without-ca-path",

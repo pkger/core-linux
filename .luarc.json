@@ -20,6 +20,7 @@
     "cp",
     "extract",
     "prefix",
-    "INSTALLATION_DIRECTORY"
+    "INSTALLATION_DIRECTORY",
+        "pkgdir"
   ]
 }
