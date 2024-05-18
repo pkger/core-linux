@@ -21,6 +21,7 @@
     "extract",
     "prefix",
     "INSTALLATION_DIRECTORY",
-        "pkgdir"
+        "pkgdir",
+        "pkgshare"
   ]
 }
