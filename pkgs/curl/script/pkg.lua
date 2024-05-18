@@ -6,8 +6,6 @@ manteiners = "Diogo-ss"
 
 url = "https://curl.se/download/curl-${{ version }}.tar.gz"
 
-bin = "bin/curl"
-
 checkver = {
 	url = "https://curl.se/download.html",
 	-- regex = "<b>curl%s+(%d+%.%d+%.%d+)</b>",
