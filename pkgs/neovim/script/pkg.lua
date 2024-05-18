@@ -5,8 +5,6 @@ license = "Apache-2.0"
 manteiners = "Diogo-ss"
 url = "https://github.com/neovim/neovim/releases/download/v${{ version }}/nvim-linux64.tar.gz"
 
-bin = "bin/nvim"
-
 checkver = {
 	url = "https://api.github.com/repos/neovim/neovim/releases/latest",
 	jsonpath = "tag_name",

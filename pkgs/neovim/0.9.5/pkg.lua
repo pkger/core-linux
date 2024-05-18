@@ -6,8 +6,6 @@ manteiners = "Diogo-ss"
 version = "0.9.5"
 url = "https://github.com/neovim/neovim/releases/download/v${{ version }}/nvim-linux64.tar.gz"
 
-bin = "bin/nvim"
-
 keep_source_file = true
 
 checkver = {
