@@ -1,7 +1,7 @@
 name = "gettext"
 version = " 0.22.5"
 description =
-"Specifically, the GNU gettext utilities are a set of tools that provides a framework to help other GNU packages produce multi-lingual messages."
+  "Specifically, the GNU gettext utilities are a set of tools that provides a framework to help other GNU packages produce multi-lingual messages."
 homepage = "https://www.gnu.org/software/gettext/"
 license = "GNU Lesser General Public License"
 manteiners = "Diogo-ss"

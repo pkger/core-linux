@@ -1,7 +1,5 @@
 {
-  "diagnostics.disable": [
-    "lowercase-global"
-  ],
+  "diagnostics.disable": ["lowercase-global"],
   "diagnostics.globals": [
     "name",
     "description",
@@ -21,7 +19,7 @@
     "extract",
     "prefix",
     "INSTALLATION_DIRECTORY",
-        "pkgdir",
-        "pkgshare"
+    "pkgdir",
+    "pkgshare"
   ]
 }

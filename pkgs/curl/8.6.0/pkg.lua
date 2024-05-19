@@ -8,27 +8,27 @@ version = "8.6.0"
 url = "https://curl.se/download/curl-${{ version }}.tar.gz"
 
 checkver = {
-	url = "https://curl.se/download.html",
-	-- regex = "<b>curl%s+(%d+%.%d+%.%d+)</b>",
-	regex = "<b>curl (.-)</b>",
+  url = "https://curl.se/download.html",
+  -- regex = "<b>curl%s+(%d+%.%d+%.%d+)</b>",
+  regex = "<b>curl (.-)</b>",
 }
 
 function install()
-	system({
-		"./configure",
-		"--disable-debug",
-		"--disable-dependency-tracking",
-		"--prefix=" .. pkgdir,
-		"--with-openssl",
-		"--without-ca-bundle",
-		"--without-ca-path",
-		"--with-ca-fallback",
-		"--with-secure-transport",
-		"--with-default-ssl-backend=openssl",
-		"--with-libidn2",
-		"--with-libssh2",
-		"--without-libpsl",
-	})
+  system {
+    "./configure",
+    "--disable-debug",
+    "--disable-dependency-tracking",
+    "--prefix=" .. pkgdir,
+    "--with-openssl",
+    "--without-ca-bundle",
+    "--without-ca-path",
+    "--with-ca-fallback",
+    "--with-secure-transport",
+    "--with-default-ssl-backend=openssl",
+    "--with-libidn2",
+    "--with-libssh2",
+    "--without-libpsl",
+  }
 
-	system({ "make", "install" })
+  system { "make", "install" }
 end

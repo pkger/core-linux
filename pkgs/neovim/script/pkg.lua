@@ -6,11 +6,11 @@ manteiners = "Diogo-ss"
 url = "https://github.com/neovim/neovim/releases/download/v${{ version }}/nvim-linux64.tar.gz"
 
 checkver = {
-	url = "https://api.github.com/repos/neovim/neovim/releases/latest",
-	jsonpath = "tag_name",
-	regex = "[Vv]?(.+)",
+  url = "https://api.github.com/repos/neovim/neovim/releases/latest",
+  jsonpath = "tag_name",
+  regex = "[Vv]?(.+)",
 }
 
 function install()
-	system("mv * ..")
+  system "mv * .."
 end
